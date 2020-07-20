@@ -1,7 +1,5 @@
 package com.example.demo;
 
-
-
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
@@ -22,25 +20,13 @@ public class CalculadoraTest {
 	@Before
 	public void init() {
 		MockitoAnnotations.initMocks(this);
-		
-		when(calculadoraGoogle.sumar(5,5)).thenReturn(10);
+		when(calculadoraGoogle.sumar(5, 5)).thenReturn(10);
 	}
 
 	@Test
-	public void sumaNuestraTest() {
-
+	public void sumaGoogleTest() {
 		assertEquals(10, calculadora.sumaNuestra(5, 5));
 
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
